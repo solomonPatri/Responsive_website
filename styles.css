@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+img {
+    display: block;
+
+
+}
+
+.main-header {
+
+    border: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #4a4a4a;
+    background-color: #fafafa;
+  
+}
+
+.main-title {
+    font-size: medium;
+
+    padding: 10px;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    border: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    ;
+    padding-right: 20px;
+
+}
+
+.header-nav-item {
+
+    border: 2px;
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 10px;
+}
+
+.profile-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 100px;
+   margin-bottom: 20px;
+
+
+}
+
+.profile-image {
+
+    width: 350px;
+    height: 200px;
+margin-bottom: 50px;
+
+}
+
+.profile-about {
+
+    font-size:large;
+    text-align: center;
+    color: #7f7f7f;
+    width: 300px;
+    height: 200px;
+
+}
+
+.main-container {
+
+    border: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #4a4a4a;
+
+
+}
+
+.cards-container {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.card {
+    border: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-img {
+
+    width: 80%;
+    margin-top: 10px;
+}
+
+.aside-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.aside-title {
+
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+.aside-contact {
+    font-size: 0.95em;
+    margin: 5px;
+    color: #7f7f7f;
+    text-decoration: none;
+    margin-left: 5px;
+
+}
+
+.aside-contact a {
+
+    color: #4a4a4a;
+}
+
+.footer-mobile{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-tablet{
+    display: none;
+}
+
+
+@media (min-width :640px) {
+
+
+    .header-nav {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 10px;
+
+
+    }
+
+    .header-nav-item {
+        background: none;
+    }
+
+    .profile-container {
+        padding: 10px;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .profile-about {
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 100px;
+        text-align: start;
+      margin-right: auto;
+      margin-bottom: auto;
+      display: flex;
+       width: 500px;
+    }
+
+    .profile-image {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+
+    }
+
+    .profile-item {
+
+        justify-content: space-between;
+        text-align: start;
+
+    }
+
+    .cards-container {
+
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+  .aside-container{
+    text-align: center;
+    padding: 50px;
+  }
+
+
+
+
+ .footer-mobile{
+        display: none;
+        
+    }
+ .footer-tablet{
+        display: flex;
+        border: 2px ;
+        flex-direction: row;
+        justify-content: space-between;
+        color :black;
+    }
+  .tb-other{
+    
+    border:2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    
+    
+  }
+
+}
+
+@media(min-width: 900px) {
+
+    .main-header {
+        flex-direction: row;
+
+
+    }
+
+    .header-name {
+
+        margin-right: auto;
+        font-size: medium;
+        padding-left: 10px;
+
+    }
+
+    .header-nav {
+
+        width: 30%;
+    }
+
+    .header-nav-item {
+        background: none;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .profile-container {
+        justify-content: space-around;
+         padding-left: 10px;
+     
+    }
+
+    .profile-image {
+        display: flex;
+        flex-direction: flex-end;
+        width: 350px;
+        height: 200px;
+
+    }
+
+    .profile-about {
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 100px;
+        text-align: start;
+      margin-right: auto;
+      margin-bottom: auto;
+      display: flex;
+       width: 700px;
+    }
+
+.aside-container{
+
+    padding: 100px;
+}
+
+
+
+.footer-mobile{
+    display: none;
+}
+
+}
